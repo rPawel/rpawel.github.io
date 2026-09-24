@@ -1,71 +1,402 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Profimedia</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="tools/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profimedia | DevOps, Kubernetes &amp; Cloud Infrastructure Consultancy in London</title>
+  <meta name="description" content="Profimedia is a small London-based team of DevOps engineers. Kubernetes (CKA), CI/CD, cloud, hybrid and on-prem infrastructure, high availability, security and patching, and AI infrastructure.">
+  <link rel="canonical" href="https://www.profimedia.co.uk/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b1f33">
+  <meta name="author" content="Profimedia">
 
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Profimedia">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://www.profimedia.co.uk/">
+  <meta property="og:title" content="Profimedia | DevOps, Kubernetes &amp; Cloud Infrastructure">
+  <meta property="og:description" content="A small London-based team of DevOps engineers. Kubernetes, CI/CD, cloud, hybrid and on-prem, high availability, security and AI infrastructure.">
+  <meta property="og:image" content="https://www.profimedia.co.uk/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Profimedia – DevOps, Kubernetes and cloud infrastructure">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Profimedia | DevOps, Kubernetes &amp; Cloud Infrastructure">
+  <meta name="twitter:description" content="A small London-based team of DevOps engineers. Kubernetes, CI/CD, cloud, hybrid and on-prem, high availability, security and AI infrastructure.">
+  <meta name="twitter:image" content="https://www.profimedia.co.uk/assets/img/og-image.png">
 
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.profimedia.co.uk/#organization",
+        "name": "Profimedia",
+        "url": "https://www.profimedia.co.uk/",
+        "logo": "https://www.profimedia.co.uk/assets/img/icon-512.png",
+        "image": "https://www.profimedia.co.uk/assets/img/og-image.png",
+        "email": "info@profimedia.co.uk",
+        "description": "Small London-based DevOps and cloud infrastructure consultancy: Kubernetes, CI/CD, cloud, hybrid and on-premises infrastructure, high availability, security, patching and AI infrastructure.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Place", "name": "Europe" }
+        ],
+        "knowsAbout": [
+          "DevOps", "Kubernetes", "Certified Kubernetes Administrator (CKA)", "Continuous Integration",
+          "Continuous Delivery", "GitOps", "Infrastructure as Code", "Terraform", "Ansible",
+          "Cloud computing", "Amazon Web Services", "Microsoft Azure", "Google Cloud",
+          "Hybrid cloud", "On-premises infrastructure", "High availability", "Disaster recovery",
+          "Linux", "Security hardening", "Patch management", "DevSecOps", "Observability",
+          "Site Reliability Engineering", "MLOps", "AI infrastructure", "Large language models"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@profimedia.co.uk",
+          "areaServed": "GB",
+          "availableLanguage": ["en"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.profimedia.co.uk/#website",
+        "url": "https://www.profimedia.co.uk/",
+        "name": "Profimedia",
+        "inLanguage": "en-GB",
+        "publisher": { "@id": "https://www.profimedia.co.uk/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.profimedia.co.uk/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How big is Profimedia?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We are deliberately small: a few experienced developers and DevOps engineers. You work directly with the engineers doing the work, with no account managers or sales layers in between." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only work with cloud platforms?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. We work across public cloud (AWS, Azure, Google Cloud), on-premises and bare-metal environments, and hybrid set-ups that combine both." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with an existing Kubernetes cluster?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We regularly review, upgrade, secure and stabilise existing clusters, as well as build new ones. Our team includes a Certified Kubernetes Administrator (CKA)." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer ongoing support and patching?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alongside one-off projects we offer ongoing arrangements covering OS and application patching, Kubernetes upgrades, monitoring and general infrastructure maintenance." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work remotely?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We are remote-first and based in London. We work with clients across the UK and Europe, and can meet on site in London when useful." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-<div class="transy"></div>
-<div class="wrapper">
-	<div class="centered">
-		<div class="header">
-			<h1 id="logo">Profimedia</h1>
-			<p class="line1">- Tech Entropy Moderators -</p>
-		</div>
-		
-		<div class="content">
-				<p>software architecture, processes and infrastructure consultancy</p>
-		</div>
-		
-		
-		
+  <a class="skip-link" href="#main">Skip to content</a>
 
-		
-		<!--div class="form">
-			<p>be notified! we just need your email address.</p>
-			<div class="mainform">
-				<div class="field"><input type="text" class="field" id="test" value="example@youremail.com"  /></div>
-				<div class="submit"><input class="submit" type="button" value="Okay" /></div>						
-			</div>
-		</div-->
-		
-		
-		
-		<div class="social">
-		<p>
-		</p>
-		</div>
-	</div>
-</div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Profimedia home">
+        <img src="/assets/img/logo.svg" alt="" width="32" height="32">
+        Profimedia
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#approach">Approach</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-	
-	
-		<script type="text/javascript">
-var placeholder = $("#test").val();
+  <main id="main">
+    <section class="hero">
+      <img class="hero-cog" src="/assets/img/logo.svg" alt="" width="560" height="560">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">DevOps &amp; platform engineering · London, UK</span>
+          <h1>DevOps, Kubernetes &amp; cloud infrastructure, engineered properly.</h1>
+          <p class="lead">Profimedia is a small team of experienced developers and DevOps engineers. We design, automate, secure and run infrastructure in the public cloud, on-premises, or anywhere in between.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:info@profimedia.co.uk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              info@profimedia.co.uk
+            </a>
+            <a class="btn btn-ghost" href="#services">What we do</a>
+          </div>
+          <ul class="hero-facts">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Certified Kubernetes Administrator (CKA)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Everything as code</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No vendor lock-in</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-$("#test").keydown(function() {
-    if (this.value == placeholder) {
-        this.value = '';
-    }
-}).blur(function() {
-    if (this.value == '') {
-        this.value = placeholder;
-    }
-});
-$( ":button" ).click(function() {
-    $("#test").val(placeholder)
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2 id="services-title">What we do</h2>
+          <p>Hands-on engineering across the whole delivery and operations lifecycle, from the first commit to production and beyond.</p>
+        </div>
 
-});
-</script>
+        <div class="grid services">
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 2v7.5"/><path d="m19 5-5.23 5.23"/><path d="M22 12h-7.5"/><path d="m19 19-5.23-5.23"/><path d="M12 14.5V22"/><path d="M10.23 13.77 5 19"/><path d="M9.5 12H2"/><path d="M10.23 10.23 5 5"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+            <h3>Kubernetes &amp; containers</h3>
+            <p>Design, build, upgrade and operate Kubernetes clusters, managed or self-hosted. Cluster reviews, hardening, autoscaling and Helm packaging by a CKA-certified engineer.</p>
+            <ul class="tags"><li>EKS</li><li>AKS</li><li>GKE</li><li>k3s / RKE2</li><li>Helm</li></ul>
+          </article>
 
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></svg></div>
+            <h3>CI/CD &amp; GitOps</h3>
+            <p>Fast, reliable pipelines that build, test, scan and deploy automatically. GitOps workflows so every change is reviewed, versioned and easy to roll back.</p>
+            <ul class="tags"><li>GitHub Actions</li><li>GitLab CI</li><li>Jenkins</li><li>Argo CD</li><li>Flux</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
+            <h3>Cloud, hybrid &amp; on-prem</h3>
+            <p>Public cloud, private data centre or a mix of both. Migrations, landing zones, networking and cost optimisation, chosen for your needs rather than a vendor's.</p>
+            <ul class="tags"><li>AWS</li><li>Azure</li><li>Google Cloud</li><li>Proxmox</li><li>VMware</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div>
+            <h3>Infrastructure as Code</h3>
+            <p>Reproducible, documented infrastructure defined in code and kept in Git. No snowflake servers and no undocumented manual steps.</p>
+            <ul class="tags"><li>Terraform</li><li>OpenTofu</li><li>Ansible</li><li>Packer</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg></div>
+            <h3>High availability &amp; DR</h3>
+            <p>Architectures that stay up when components fail: redundancy, load balancing, database replication, tested backups and clear recovery objectives (RPO/RTO).</p>
+            <ul class="tags"><li>Multi-AZ</li><li>Failover</li><li>Backups</li><li>DR testing</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Security &amp; patching</h3>
+            <p>System hardening, automated OS and application patching, vulnerability and image scanning, secrets management and least-privilege access. DevSecOps built into the pipeline.</p>
+            <ul class="tags"><li>CIS Benchmarks</li><li>Vault</li><li>Trivy</li><li>SBOM</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Observability &amp; SRE</h3>
+            <p>Metrics, logs, traces and meaningful alerts, so problems are spotted before users notice. SLOs, runbooks and calm incident response.</p>
+            <ul class="tags"><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>OpenTelemetry</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg></div>
+            <h3>AI infrastructure &amp; MLOps</h3>
+            <p>Running AI workloads in production: GPU scheduling on Kubernetes, self-hosted LLMs, model serving and pipelines, plus practical AI-assisted automation for engineering teams.</p>
+            <ul class="tags"><li>GPU nodes</li><li>vLLM</li><li>Ollama</li><li>LLM APIs</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="prose">
+          <span class="eyebrow">About us</span>
+          <h2 id="about-title">Small by design</h2>
+          <p>Profimedia is an independent consultancy of a few experienced developers and DevOps engineers, based in London. We are not a large agency and we don't pretend to be one.</p>
+          <p>That works in your favour. There are no account managers or sales layers: you speak directly to the engineers who design, build and support your systems. Decisions are quick, communication is straightforward and the people who build it are the people who answer the phone.</p>
+          <p>Our background covers both software development and operations, so we understand what development teams need from a platform, and what it takes to keep it running at 3am.</p>
+        </div>
+        <ul class="checklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+            <div><strong>Certified Kubernetes Administrator</strong><span>CKA certification from the Cloud Native Computing Foundation (CNCF) and The Linux Foundation.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Senior, hands-on engineers</strong><span>Many years of running production systems, from single servers to multi-cluster platforms.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>You own everything</strong><span>All code, configuration and documentation live in your repositories. No lock-in, ever.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>London-based, remote-first</strong><span>Working with clients across the UK and Europe.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Approach</span>
+          <h2 id="approach-title">How we work</h2>
+          <p>A simple, transparent process with clear scope and no surprises.</p>
+        </div>
+        <ol class="grid steps">
+          <li class="step">
+            <h3>Assess</h3>
+            <p>We review your current setup, risks and goals, and agree what success looks like.</p>
+          </li>
+          <li class="step">
+            <h3>Plan</h3>
+            <p>A pragmatic design and a clear, prioritised plan. Right-sized and not over-engineered.</p>
+          </li>
+          <li class="step">
+            <h3>Build &amp; automate</h3>
+            <p>Delivered as code, tested and repeatable, in small increments you can see and review.</p>
+          </li>
+          <li class="step">
+            <h3>Hand over &amp; support</h3>
+            <p>Documentation and knowledge transfer, with optional ongoing support, patching and upgrades.</p>
+          </li>
+        </ol>
+
+        <div class="engagements">
+          <div><strong>Projects</strong><span>Fixed-scope work such as a migration, new platform or CI/CD overhaul.</span></div>
+          <div><strong>Ongoing support</strong><span>Regular maintenance, patching, upgrades and monitoring.</span></div>
+          <div><strong>Consultancy</strong><span>Architecture reviews, audits and second opinions, by the day.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="technology" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Technology</span>
+          <h2 id="tech-title">Tools we work with</h2>
+          <p>Proven, widely supported open-source and cloud technologies, chosen to fit the problem.</p>
+        </div>
+        <div class="grid tech">
+          <div>
+            <h3>Containers &amp; orchestration</h3>
+            <ul class="chips"><li>Kubernetes</li><li>Docker</li><li>containerd</li><li>Helm</li><li>Kustomize</li><li>k3s</li><li>RKE2</li></ul>
+          </div>
+          <div>
+            <h3>Cloud &amp; virtualisation</h3>
+            <ul class="chips"><li>AWS</li><li>Microsoft Azure</li><li>Google Cloud</li><li>Proxmox VE</li><li>VMware vSphere</li><li>Bare metal</li></ul>
+          </div>
+          <div>
+            <h3>Infrastructure as Code</h3>
+            <ul class="chips"><li>Terraform</li><li>OpenTofu</li><li>Ansible</li><li>Packer</li><li>cloud-init</li></ul>
+          </div>
+          <div>
+            <h3>CI/CD &amp; GitOps</h3>
+            <ul class="chips"><li>GitHub Actions</li><li>GitLab CI</li><li>Jenkins</li><li>Argo CD</li><li>Flux</li></ul>
+          </div>
+          <div>
+            <h3>Observability</h3>
+            <ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Alertmanager</li><li>OpenTelemetry</li><li>ELK</li></ul>
+          </div>
+          <div>
+            <h3>Security</h3>
+            <ul class="chips"><li>HashiCorp Vault</li><li>Trivy</li><li>cert-manager</li><li>Keycloak</li><li>WireGuard</li><li>CIS Benchmarks</li></ul>
+          </div>
+          <div>
+            <h3>Linux &amp; languages</h3>
+            <ul class="chips"><li>Ubuntu</li><li>Debian</li><li>RHEL / Rocky</li><li>Bash</li><li>Python</li><li>Go</li></ul>
+          </div>
+          <div>
+            <h3>AI</h3>
+            <ul class="chips"><li>NVIDIA GPU Operator</li><li>vLLM</li><li>Ollama</li><li>OpenAI / Anthropic APIs</li><li>RAG pipelines</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Common questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How big is Profimedia?</summary>
+            <p>We are deliberately small: a few experienced developers and DevOps engineers. You work directly with the engineers doing the work, with no account managers or sales layers in between.</p>
+          </details>
+          <details>
+            <summary>Do you only work with cloud platforms?</summary>
+            <p>No. We work across public cloud (AWS, Azure, Google Cloud), on-premises and bare-metal environments, and hybrid set-ups that combine both.</p>
+          </details>
+          <details>
+            <summary>Can you help with an existing Kubernetes cluster?</summary>
+            <p>Yes. We regularly review, upgrade, secure and stabilise existing clusters, as well as build new ones. Our team includes a Certified Kubernetes Administrator (CKA).</p>
+          </details>
+          <details>
+            <summary>Do you offer ongoing support and patching?</summary>
+            <p>Yes. Alongside one-off projects we offer ongoing arrangements covering OS and application patching, Kubernetes upgrades, monitoring and general infrastructure maintenance.</p>
+          </details>
+          <details>
+            <summary>Do you work remotely?</summary>
+            <p>We are remote-first and based in London. We work with clients across the UK and Europe, and can meet on site in London when useful.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-title">Let's talk about your infrastructure</h2>
+          <p>Tell us briefly what you are working on. We'll reply with honest advice, even if that means we're not the right fit.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:info@profimedia.co.uk?subject=Enquiry%20via%20profimedia.co.uk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            info@profimedia.co.uk
+          </a>
+        </div>
+        <ul class="contact-meta">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>London, United Kingdom</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>We aim to reply within 1–2 working days</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/assets/img/logo.svg" alt="" width="22" height="22">
+        Profimedia
+      </a>
+      <p class="copyright">&copy; 2026 Profimedia · DevOps &amp; cloud infrastructure consultancy · London, UK</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:info@profimedia.co.uk">info@profimedia.co.uk</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
-
